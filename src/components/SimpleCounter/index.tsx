@@ -1,10 +1,13 @@
 import { useState} from 'react';
+import { FaPlus } from "react-icons/fa";
+import { FaMinus } from "react-icons/fa";
+import "./styles.css";
 
 const SimpleCounter = () => {
     const[count, setCount] = useState(0);
 
     const handleMinus = () =>{
-        setCount(count -1);
+        setCount((prevState) => prevState - 1);
     }
 
     const handlePlus = () =>{
@@ -17,8 +20,8 @@ const SimpleCounter = () => {
                 <h1>{count}</h1>
             </div>
             <div className="counter_button">
-                <button onClick={handleMinus}>-</button>
-                <button onClick={handlePlus}>+</button>
+                <button onClick={handleMinus}><FaMinus /></button>
+                <button onClick={handlePlus}><FaPlus /></button>
             </div>
         </div>
     )
