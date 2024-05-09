@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import "./styles.css";
+import React from "react";
 
 type CardProps = {
     title: string;
     route: string;
-    image?:string;   
+    image?:React.ReactNode;   
 }
 
 
