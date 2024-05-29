@@ -3,7 +3,7 @@ import "./styles.css";
 
 const Header = () => {
   return (
-    <Link to="/" style={{textDecoration:"none"}}>
+    <Link to="/" style={{ textDecoration: "none" }}>
       <div className="header">
         <h1 className="header_title">React Exercise</h1>
       </div>
